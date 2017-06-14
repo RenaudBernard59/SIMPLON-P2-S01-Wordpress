@@ -3,8 +3,13 @@
 Création d'un thème pour WordPress dans le câdre de la formation SIMPLON Roubaix
 
 -----------------
+## Contenu
+* 1 Présentation du projet
+* 2 Technologies utilisées
 
-## Etapes du projet wordpress
+
+## Présentation du projet
+Etapes du projet wordpress
 SUJET : Un blog sur la tech
 * Installation serveur local (lamp) : apache, php 7, mysql, php myadmin
 * Création d'un dossier de travail avec un wordpress local. En se rendant sur localhost/nomdudossier ils doivent trouver la * page d'acceuil du thème par défaut.
@@ -27,4 +32,12 @@ SUJET : Un blog sur la tech
 * Création du modèle de page statique
 * Activation des images pour les articles
 
+## Technologies utilisées
+# Frameworks
+* html5-boilerplate - v5.3.0
+* bootstrap-dist - v3.3.7
+* favicons pack [FAVICON.org](http://www.favicon-generator.org/)
+* [glyphycons free packge](https://glyphicons.com/) icônes .PNG
 
+# Wireframes
+Balsamiq Mockup

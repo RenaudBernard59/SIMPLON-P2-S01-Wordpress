@@ -96,14 +96,29 @@ textarea {
    ========================================================================== */
 
 
+.navbar {
+    height: 100px;
+}
+/*
+.navbar-default .navbar-fnt {
+    color: white !important;
+}
 
+.navbar-default .navbar-backgrnd {
+    color: orange !important;
+}
+*/
+.navbar, h1 {
+    font-size: 40px !important;
+}
 
+.logo {
+    width: 70px;
+}
 
-
-
-
-
-
+.navbar-header {
+    width: 350px;
+}
 
 
 

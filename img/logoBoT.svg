@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="177.71324"
+     inkscape:cx="168.11679"
      inkscape:cy="925.83272"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -53,11 +53,13 @@
      inkscape:groupmode="layer"
      id="layer1">
     <circle
-       style="opacity:0.3;fill:#90ff00;fill-opacity:1;stroke:#ffffff;stroke-width:8.99328136;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.3;fill:#04ff00;fill-opacity:1;stroke:#ffffff;stroke-width:8.99328136;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4174"
        cx="121.47085"
        cy="121.75918"
-       r="116.96405" />
+       r="116.96405"
+       inkscape:export-xdpi="220.16"
+       inkscape:export-ydpi="220.16" />
   </g>
   <g
      inkscape:groupmode="layer"

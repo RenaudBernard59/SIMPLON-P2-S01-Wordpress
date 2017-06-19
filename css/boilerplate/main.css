@@ -95,19 +95,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+/*
 .navbar {
     height: 100px;
 }
-/*
-.navbar-default .navbar-fnt {
-    color: white !important;
-}
 
-.navbar-default .navbar-backgrnd {
-    color: orange !important;
-}
-*/
+
 .navbar, h1 {
     font-size: 40px !important;
 }
@@ -120,8 +113,10 @@ textarea {
     width: 350px;
 }
 
-
-
+.navbar-default {
+    background-color: #f0ad4e !important;
+}
+*/
 
 
 

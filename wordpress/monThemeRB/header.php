@@ -96,3 +96,163 @@
     </div>
   </nav>
 </header>
+
+
+
+
+
+ <!-- #################### MAIN #################### -->
+<main class="container">
+  <div class="page-header">
+    <h1>Présentation de Blog of Teck</h1>
+  </div>
+  <article class="col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio perferendis eligendi esse vitae asperiores maiores, blanditiis nisi. Perferendis labore ipsa dolorem aliquam, corrupti rem aspernatur sapiente accusamus animi officia enim.</article>
+
+<!-- #####################################################################################
+######################################## CAROUSSEL #######################################
+###################################################################################### -->
+
+<div id="carousel-accueil" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <!-- ########## CAROUSSEL 1 ########### -->
+    <div class="item active">
+      <div class="carousel-page">
+        <img src="img/caroussel1.png" alt="image-caroussel" class="col-lg-12 col-md-12 col-sm-12 col xs-12">
+      </div>
+        <div class="carousel-caption">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed porro, veniam harum repellat, veritatis ea.</p>
+          <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+        </div>  
+    </div>
+
+    <!-- ########## CAROUSSEL 2 ########### -->
+    <div class="item">
+      <img src="img/caroussel2.png" alt="image-caroussel" class="col-lg-12 col-md-12 col-sm-12 col xs-12">
+      <div class="carousel-caption">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sint inventore eligendi aut cumque dolor omnis iusto quaerat accusamus veritatis!</p>
+        <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+      </div>
+    </div>
+
+    <!-- ########## CAROUSSEL 3 ########### -->
+    <div class="item">
+      <img src="img/caroussel3.png" alt="image-caroussel" class="col-lg-12 col-md-12 col-sm-12 col xs-12">
+      <div class="carousel-caption">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque cupiditate hic eum.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+      </div>
+    </div>
+
+    <!-- ########## CAROUSSEL 4 ########### -->
+    <div class="item">
+      <img src="img/caroussel4.png" alt="image-caroussel" class="col-lg-12 col-md-12 col-sm-12 col xs-12">
+      <div class="carousel-caption">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloremque totam in, tempore officia labore. Distinctio, quibusdam, laborum.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- #####################################################################################
+############################ SECTIONS PRESENTATION THUMNAILS #############################
+###################################################################################### -->
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-3 col lg-3">
+    <div class="thumbnail">
+      <img src="img/caroussel1.png" alt="Photo Thubnails">
+      <div class="caption">
+        <h3>Thumbnail label 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eveniet fugit id mollitia sit similique fugiat architecto repellendus a quas?</p>
+        <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-3 col lg-3">
+      <div class="thumbnail">
+        <img src="img/caroussel2.png" alt="Photo Thubnails">
+        <div class="caption">
+          <h3>Thumbnail label 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eveniet fugit id mollitia sit similique fugiat architecto repellendus a quas?</p>
+          <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+        </div>
+      </div>
+    </div>
+  <div class="col-xs-6 col-sm-6 col-md-3 col lg-3">
+      <div class="thumbnail">
+        <img src="img/caroussel3.png" alt="Photo Thubnails">
+        <div class="caption">
+          <h3>Thumbnail label 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eveniet fugit id mollitia sit similique fugiat architecto repellendus a quas?</p>
+          <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+        </div>
+      </div>
+    </div>
+  <div class="col-xs-6 col-sm-6 col-md-3 col lg-3">
+      <div class="thumbnail">
+        <img src="img/caroussel4.png" alt="Photo Thubnails">
+        <div class="caption">
+          <h3>Thumbnail label 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eveniet fugit id mollitia sit similique fugiat architecto repellendus a quas?</p>
+          <p><a href="#" class="btn btn-primary" role="button">Voir la suite</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- #####################################################################################
+#################################### DERNIERS ARTICLES ###################################
+###################################################################################### -->
+<section id="content">
+ <h2>Derniers Articles</h2> 
+<?php if(have_posts()) : ?>
+<?php while(have_posts()) : the_post(); ?>
+<article class="col-lg-12 col md-12 col-sm-XX col-xs-YY text-justify">
+    <header class="panel-header">
+        <h2>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                <?php the_title(); ?>
+            </a>
+        </h2>
+    <div class="tags"><?php the_category(', ') ?></div>
+    </header>
+
+    <div class= "post" id="post-<?php the_ID(); ?>">
+        <div class= "post_content">
+            <?php the_content(); ?>
+        </div>
+    </div>
+    <footer class="panel-footer postmetadata">
+        <div class="col-lg-4 col md-4 col-sm-4 col-xs-4">
+            <p class="auteur">Auteur : <?php the_author() ?> </p>
+        </div>
+        <div class="col-lg-4 col md-4 col-sm-4 col-xs-4">
+            <p class="date"> Date <time datetime=" <?php the_time('j F Y') ?>"> <?php the_time('j F Y') ?></time></p>
+        </div>
+        <div class="col-lg-4 col md-4 col-sm-4 col-xs-4">
+            <p class="vues">Vues : 00000</p>
+        </div>
+    </footer>
+</article>
+<?php endwhile; ?>
+<?php endif; ?>
+</section>

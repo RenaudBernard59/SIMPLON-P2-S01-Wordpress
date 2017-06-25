@@ -54,4 +54,45 @@
         <!--[i lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
+
+ <!-- #################### HEADER #################### -->
+<header class="navbar navbar-default">
+  <nav class="container">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- ===== -->
+        <div class="navbar-text">
+            <a href="<?php bloginfo('url'); ?>" class="navbar-brand">
+              <img src="img/logo.png" alt="Logo Blog of Tec" class="logo col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            </a>
+            <span class="hidden">
+                <?php bloginfo('name'); ?>
+            </span>
+        </div>
+      </div>
+    <!-- ===== -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="themes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Thèmes <span class="caret"></span></a>
+               <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Matériel</a></li>
+                <li><a href="#">Softwares</a></li>
+                <li><a href="#">Général</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div> <!--/.nav-collapse -->
+    <!-- ===== -->
+    </div>
+  </nav>
+</header>

@@ -73,46 +73,68 @@
 
 <body <?php body_class(); ?>>
 
-  <div id="site-navigation" class="navbar navbar-fixed-top" role="navigation">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <i class="icon-chevron-down"></i>
+
+
+
+ <!-- #################### HEADER #################### -->
+ <!-- ########## NAV ########## -->
+<header class="navbar navbar-default">
+  <nav class="container">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-        <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerstrap' ); ?>"><?php _e( 'Skip to content', 'boilerstrap' ); ?></a>
-        <div class="nav-collapse collapse">
-  	  	<?php 
-  	  	    wp_nav_menu( array(
-  	  	        'menu'       => 'top_menu',
-  	  	        'depth'      => 3,
-  	  	        'container'  => false,
-  	  	        'menu_class' => 'nav',
-  	  	        //Process nav menu using our custom nav walker
-  	  	        'walker' => new twitter_bootstrap_nav_walker())
-  	  	    );
-  	  	?>
-  			<form method="get" id="searchform" class="navbar-search pull-right" action="<?php bloginfo('home'); ?>/">
-  			<div>
-  				<form class="form-search">
-  					<input type="text" name="s" id="s" class="search-query" placeholder="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" x-webkit-speech tabindex="1">
-  				</form>
-  			</div>
-  			</form>
-  
-        </div><!--/.nav-collapse -->
+        <!-- ===== -->
+        <div class="navbar-text">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand" 
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+              <img src="img/logo.png" alt="Logo Blog of Tec" class="logo col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            </a>
+        </div>
       </div>
+    <!-- ===== -->
+    <div class="nav-collapse collapse">
+            <?php 
+                wp_nav_menu( array(
+                    'menu'       => 'top_menu',
+                    'depth'      => 3,
+                    'container'  => false,
+                    'menu_class' => 'nav',
+                    //Process nav menu using our custom nav walker
+                    'walker' => new twitter_bootstrap_nav_walker())
+                );
+            ?>
+            <form method="get" id="searchform" class="navbar-search pull-right" action="<?php bloginfo('home'); ?>/">
+            <div>
+              <form class="form-search">
+                <input type="text" name="s" id="s" class="search-query" placeholder="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" x-webkit-speech tabindex="1">
+              </form>
+            </div>
+            </form>
+      
+            </div><!--/.nav-collapse -->
+    <!-- ===== -->
     </div>
-  </div>
-  
+  </nav>
+</header>
+
+
+<!-- ########## MAIN ########## -->
+<main class="container">
+
+
   <div id="page" class="hfeed site container">
-  	<header id="masthead" class="site-header" role="banner">
-  		
-  		<?php $header_image = get_header_image();
-  		if ( ! empty( $header_image ) ) : ?>
-  			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-  		<?php endif; ?>
-  	</header><!-- #masthead -->
+    <header id="masthead" class="site-header" role="banner">
+      
+      <?php $header_image = get_header_image();
+      if ( ! empty( $header_image ) ) : ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+      <?php endif; ?>
+    </header><!-- #masthead -->
   
-  	<div id="main" class="wrapper">
+    <div id="main" class="wrapper">
   <div class="row-fluid">

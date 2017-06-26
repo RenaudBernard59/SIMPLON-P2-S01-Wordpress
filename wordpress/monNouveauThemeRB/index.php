@@ -18,6 +18,7 @@ get_header();
 get_sidebar( 'mobile' ); ?>
 
 
+
 	<div id="primary" class="site-content span8">
 		<div id="content" role="main">
 		<?php if ( have_posts() ) : ?>
@@ -55,6 +56,7 @@ get_sidebar( 'mobile' ); ?>
 					<p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'boilerstrap' ); ?></p>
 					<?php get_search_form(); ?>
 				</div><!-- .entry-content -->
+
 			<?php endif; // end current_user_can() check ?>
 
 			</article><!-- #post-0 -->
@@ -62,7 +64,11 @@ get_sidebar( 'mobile' ); ?>
 		<?php endif; // end have_posts() check ?>
 
 		</div><!-- #content -->
+
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+
+
+
 <?php get_footer(); ?>

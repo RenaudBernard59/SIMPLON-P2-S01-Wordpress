@@ -1,0 +1,120 @@
+INDEX.php
+
+
+
+<!-- ==================================== IGNORED ==================================== -->
+<!--
+    <div id="primary" class="site-content span8">
+        <div id="content" role="main">
+        <?php if ( have_posts() ) : ?>
+
+            <?php /* Start the Loop */ ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+                <?php get_template_part( 'content', get_post_format() ); ?>
+            <?php endwhile; ?>
+
+            <?php boilerstrap_content_nav( 'nav-below' ); ?>
+
+        <?php else : ?>
+
+            <article id="post-0" class="post no-results not-found">
+
+            <?php if ( current_user_can( 'edit_posts' ) ) :
+                // Show a different message to a logged-in user who can add posts.
+            ?>
+                <header class="entry-header">
+                    <h1 class="entry-title"><?php _e( 'No posts to display', 'boilerstrap' ); ?></h1>
+                </header>
+
+                <div class="entry-content">
+                    <p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'boilerstrap' ), admin_url( 'post-new.php' ) ); ?></p>
+                </div><!-- .entry-content -->
+<!--
+            <?php else :
+                // Show the default message to everyone else.
+            ?>
+                <header class="entry-header">
+                    <h1 class="entry-title"><?php _e( 'Nothing Found', 'boilerstrap' ); ?></h1>
+                </header>
+
+                <div class="entry-content">
+                    <p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'boilerstrap' ); ?></p>
+                    <?php get_search_form(); ?>
+                </div><!-- .entry-content -->
+<!--
+            <?php endif; // end current_user_can() check ?>
+
+            </article><!-- #post-0 -->
+<!--
+        <?php endif; // end have_posts() check ?>
+
+        </div><!-- #content -->
+<!--
+    </div><!-- #primary -->
+<!-- ==================================== IGNORED ==================================== -->
+
+
+
+<!--<?php get_sidebar(); ?>-->
+
+
+
+
+
+
+
+HEADER.php
+
+
+
+
+<!-- ==================================== IGNORED ==================================== -->
+<!--/*
+<body <?php body_class(); ?>>
+
+  <div id="site-navigation" class="navbar navbar-fixed-top" role="navigation">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <i class="icon-chevron-down"></i>
+        </button>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+        <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerstrap' ); ?>"><?php _e( 'Skip to content', 'boilerstrap' ); ?></a>
+        <div class="nav-collapse collapse">
+        <?php 
+            wp_nav_menu( array(
+                'menu'       => 'top_menu',
+                'depth'      => 3,
+                'container'  => false,
+                'menu_class' => 'nav',
+                //Process nav menu using our custom nav walker
+                'walker' => new twitter_bootstrap_nav_walker())
+            );
+        ?>
+            <form method="get" id="searchform" class="navbar-search pull-right" action="<?php bloginfo('home'); ?>/">
+            <div>
+                <form class="form-search">
+                    <input type="text" name="s" id="s" class="search-query" placeholder="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" x-webkit-speech tabindex="1">
+                </form>
+            </div>
+            </form>
+  
+        </div><!--/.nav-collapse -->
+<!--/*
+      </div>
+    </div>
+  </div>
+  
+  <div id="page" class="hfeed site container">
+    <header id="masthead" class="site-header" role="banner">
+        
+        <?php $header_image = get_header_image();
+        if ( ! empty( $header_image ) ) : ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+        <?php endif; ?>
+    </header><!-- #masthead -->
+<!--
+    <div id="main" class="wrapper">
+  <div class="row-fluid">
+-->
+<!-- ==================================== IGNORED ==================================== -->

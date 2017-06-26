@@ -38,6 +38,8 @@ SUJET : Un blog sur la tech
 * bootstrap-dist - v3.3.7
 * favicons pack [FAVICON.org](http://www.favicon-generator.org/)
 * [glyphycons free packge](https://glyphicons.com/) icônes .PNG
+* [Boilerstrap-master](http://getboilerstrap.com/) Predev Boilerplate + Bootstrap in WordPress project [php wp-files presents for new theme]   
 
 # Wireframes
-Balsamiq Mockup
+* Balsamiq Mockup
+
